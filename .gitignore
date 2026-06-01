@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.mastra/
+.env
+.env.local
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.DS_Store
+npm-debug.log*
+pnpm-debug.log*
+.claude
+.vscode
+.cursor

@@ -1,0 +1,31 @@
+{
+  "name": "mastra-examples",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mastra agent example with an Arize tracing exporter and a human-in-the-loop suspend/resume workflow.",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start",
+    "example": "tsx --env-file=.env src/example.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@mastra/arize": "latest",
+    "@mastra/core": "latest",
+    "@mastra/libsql": "latest",
+    "@mastra/memory": "^1.20.0",
+    "@mastra/observability": "latest",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "mastra": "latest",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}
