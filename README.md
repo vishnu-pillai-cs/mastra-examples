@@ -24,14 +24,14 @@ src/
 
 ```bash
 npm install
-cp .env.example .env   # then fill in OPENAI_API_KEY (and optionally Arize creds)
+cp .env.example .env   # then fill in OPENAI_API_KEY and ARIZE creds
 ```
 
 The agent uses the model string `openai/gpt-4o-mini`, so `OPENAI_API_KEY` is required.
 
 ## Run
 
-**Mastra Studio** (interactive playground at http://localhost:4111):
+**Mastra Studio** (interactive playground at [http://localhost:4111](http://localhost:4111)):
 
 ```bash
 npm run dev
@@ -142,10 +142,13 @@ In Arize you'll then see the suspended run and the resumed run grouped under the
 
 ## Scripts
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start Mastra Studio |
-| `npm run example` | Run the suspend → resume demo |
-| `npm run build` | Bundle the Mastra app |
-| `npm start` | Start the built server |
-| `npm run typecheck` | `tsc --noEmit` |
+
+| Script              | Description                   |
+| ------------------- | ----------------------------- |
+| `npm run dev`       | Start Mastra Studio           |
+| `npm run example`   | Run the suspend → resume demo |
+| `npm run build`     | Bundle the Mastra app         |
+| `npm start`         | Start the built server        |
+| `npm run typecheck` | `tsc --noEmit`                |
+
+
